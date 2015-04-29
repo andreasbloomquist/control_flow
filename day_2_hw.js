@@ -126,7 +126,6 @@ if (hasThreeFriends) {
 	var threeFriends = [];
 	while (threeFriends.length < 3) {
 		var getFriends = prompt("Enter a friends name")
-
 		threeFriends.push(getFriends);
 	}
 	alert(threeFriends);
@@ -140,7 +139,6 @@ var vowels = '';
 for (i=0; i < getWord.length; i++){
 	if (getWord[i] === "a" || getWord[i] == "e" || getWord[i] == "o" || getWord[i] == "u" || getWord[i] == "i") {
 		vowels += getWord[i];
-		console.log(vowels.length);
 	}
 } if (vowels.length > 1){
 	alert(vowels.length);
@@ -172,4 +170,4 @@ while (randomNum != guessNum) {
         guessNum = prompt("Guess Again")        
     }
 }
-alert("Got it!");
+alert("You got it! " + randomNum);
